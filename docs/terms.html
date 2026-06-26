@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions — Saini Uday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --neon-purple: #b44fff;
+      --neon-pink: #ff2d78;
+      --dark: #0a0a0f;
+      --card-bg: rgba(255,255,255,0.03);
+      --border: rgba(255,255,255,0.08);
+      --text: #e0e0e0;
+      --text-muted: rgba(255,255,255,0.6);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--neon-purple), var(--neon-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    .date {
+      color: var(--neon-purple);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .lang-toggle {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .lang-btn {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: rgba(180,79,255,0.15);
+      border-color: var(--neon-purple);
+      color: white;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: white;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Terms & Conditions</h1>
+      <div class="date">Last updated: May 2026</div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" onclick="switchLang('hi')">हिन्दी</button>
+      </div>
+    </header>
+
+    <div id="lang-en">
+      <section>
+        <h2>1. Eligibility</h2>
+        <p>You must be at least 18 years old to use this application. You must provide accurate profile information and keep your contact details updated.</p>
+      </section>
+      <section>
+        <h2>2. Account and Security</h2>
+        <p>You are responsible for all activity performed through your account. Do not share OTPs, passwords, or tokens with anyone. The app may suspend accounts involved in fraud, impersonation, or abuse.</p>
+      </section>
+      <section>
+        <h2>3. Community Conduct</h2>
+        <p>Do not post or share harmful, obscene, hateful, misleading, or illegal content. Harassment, threats, stalking, and spam are strictly prohibited. Content can be moderated or removed without prior notice for safety reasons.</p>
+      </section>
+      <section>
+        <h2>4. Marketplace and Services</h2>
+        <p>The platform connects buyers, sellers, and service providers. Users are responsible for listing accuracy, pricing, and lawful behavior. The app is an intermediary and does not guarantee transaction outcomes.</p>
+      </section>
+      <section>
+        <h2>5. Matrimonial and Member Privacy</h2>
+        <p>Contact and profile details shared by members must be used respectfully and only for legitimate communication. Misuse of personal data may result in permanent account termination and legal reporting.</p>
+      </section>
+      <section>
+        <h2>6. Data and Notifications</h2>
+        <p>The app may collect profile, device, and usage data to provide login, security, moderation, and core features. By using the app, you agree to receive OTP and essential service notifications.</p>
+      </section>
+      <section>
+        <h2>7. Enforcement</h2>
+        <p>Violation of these terms may result in warnings, feature restrictions, temporary suspension, or permanent ban. Serious violations can be reported to relevant authorities.</p>
+      </section>
+      <section>
+        <h2>8. Acceptance</h2>
+        <p>By tapping Accept, you agree to these Terms & Conditions and confirm that you will follow the platform rules.</p>
+      </section>
+    </div>
+
+    <div id="lang-hi" class="hidden">
+      <section>
+        <h2>1. पात्रता</h2>
+        <p>इस ऐप का उपयोग करने के लिए आपकी आयु कम से कम 18 वर्ष होनी चाहिए। आपको सही प्रोफ़ाइल जानकारी देनी होगी और संपर्क विवरण अपडेट रखना होगा।</p>
+      </section>
+      <section>
+        <h2>2. खाता और सुरक्षा</h2>
+        <p>आपके खाते से होने वाली सभी गतिविधियों की जिम्मेदारी आपकी होगी। OTP, पासवर्ड या टोकन किसी के साथ साझा न करें। धोखाधड़ी, फर्जी पहचान या दुरुपयोग पर खाता निलंबित किया जा सकता है।</p>
+      </section>
+      <section>
+        <h2>3. समुदाय आचरण</h2>
+        <p>हानिकारक, अश्लील, घृणित, भ्रामक या अवैध सामग्री पोस्ट/शेयर करना निषिद्ध है। उत्पीड़न, धमकी, पीछा करना और स्पैम सख्त रूप से प्रतिबंधित हैं। सुरक्षा कारणों से सामग्री हटाई जा सकती है।</p>
+      </section>
+      <section>
+        <h2>4. मार्केटप्लेस और सेवाएं</h2>
+        <p>यह प्लेटफॉर्म खरीदारों, विक्रेताओं और सेवा प्रदाताओं को जोड़ता है। लिस्टिंग की सही जानकारी, मूल्य और कानूनी व्यवहार की जिम्मेदारी उपयोगकर्ता की होगी। ऐप केवल मध्यस्थ है।</p>
+      </section>
+      <section>
+        <h2>5. मैट्रिमोनियल और सदस्य गोपनीयता</h2>
+        <p>सदस्यों के संपर्क और प्रोफ़ाइल विवरण का उपयोग केवल सम्मानजनक और वैध संचार के लिए करें। निजी जानकारी के दुरुपयोग पर स्थायी खाता समाप्ति और कानूनी कार्रवाई हो सकती है।</p>
+      </section>
+      <section>
+        <h2>6. डेटा और नोटिफिकेशन</h2>
+        <p>ऐप लॉगिन, सुरक्षा, मॉडरेशन और मुख्य सुविधाओं के लिए प्रोफ़ाइल, डिवाइस और उपयोग डेटा एकत्र कर सकता है। ऐप उपयोग करके आप OTP और आवश्यक सेवा नोटिफिकेशन के लिए सहमत होते हैं।</p>
+      </section>
+      <section>
+        <h2>7. प्रवर्तन</h2>
+        <p>नियमों के उल्लंघन पर चेतावनी, फीचर प्रतिबंध, अस्थायी निलंबन या स्थायी प्रतिबंध लगाया जा सकता है। गंभीर मामलों की सूचना संबंधित प्राधिकरण को दी जा सकती है।</p>
+      </section>
+      <section>
+        <h2>8. स्वीकृति</h2>
+        <p>Accept पर टैप करके आप इन नियमों और शर्तों से सहमत होते हैं और प्लेटफॉर्म नियमों का पालन करने की पुष्टि करते हैं।</p>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      if (lang === 'en') {
+        document.getElementById('lang-en').classList.remove('hidden');
+        document.getElementById('lang-hi').classList.add('hidden');
+        document.querySelector('h1').innerText = 'Terms & Conditions';
+      } else {
+        document.getElementById('lang-en').classList.add('hidden');
+        document.getElementById('lang-hi').classList.remove('hidden');
+        document.querySelector('h1').innerText = 'नियम और शर्तें';
+      }
+    }
+  </script>
+</body>
+</html>

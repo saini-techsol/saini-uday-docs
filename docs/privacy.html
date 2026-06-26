@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Saini Uday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --neon-purple: #b44fff;
+      --neon-pink: #ff2d78;
+      --dark: #0a0a0f;
+      --card-bg: rgba(255,255,255,0.03);
+      --border: rgba(255,255,255,0.08);
+      --text: #e0e0e0;
+      --text-muted: rgba(255,255,255,0.6);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--neon-purple), var(--neon-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    .date {
+      color: var(--neon-purple);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .lang-toggle {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .lang-btn {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: rgba(180,79,255,0.15);
+      border-color: var(--neon-purple);
+      color: white;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: white;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <div class="date">Last updated: May 2026</div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" onclick="switchLang('hi')">हिन्दी</button>
+      </div>
+    </header>
+
+    <div id="lang-en">
+      <section>
+        <h2>1. Information We Collect</h2>
+        <p>We collect information you provide directly: name, email address, mobile number, profile photo, and community-specific details such as gotra, village, occupation, and location. We also collect device identifiers for push notifications (FCM token), app usage data, and content you post (feed posts, marketplace listings, service listings, matrimonial profile).</p>
+      </section>
+      <section>
+        <h2>2. How We Use Your Information</h2>
+        <p>Your information is used to: authenticate and manage your account, display your profile in the member directory, enable community features (feed, marketplace, services, matrimonial), send transactional and service notifications (OTP, order updates, booking confirmations), moderate content for safety, and improve the app experience.</p>
+      </section>
+      <section>
+        <h2>3. Notifications</h2>
+        <p>We send push notifications for OTPs, order/booking updates, community announcements, and messages. You can disable notifications at any time from your device settings. Essential notifications (OTP for login) cannot be disabled while using OTP login.</p>
+      </section>
+      <section>
+        <h2>4. Data Sharing</h2>
+        <p>We do not sell your personal data. Your profile information is visible to other registered members of the community. We share data with service providers (email delivery, SMS, Firebase/FCM for push notifications) only as needed to operate the app. We may disclose data to comply with legal obligations.</p>
+      </section>
+      <section>
+        <h2>5. Data Retention</h2>
+        <p>Your account data is retained as long as your account is active. Deleted accounts have their personal data removed within 30 days, except where retention is required by law. OTP records are purged nightly after 24 hours.</p>
+      </section>
+      <section>
+        <h2>6. Your Rights</h2>
+        <p>You can view and update your profile at any time via the app. You can request account deletion by contacting us at the support email. You may request a copy of your personal data by reaching out to the admin.</p>
+      </section>
+      <section>
+        <h2>7. Security</h2>
+        <p>We use industry-standard security practices: passwords are stored as bcrypt hashes, API communication uses HTTPS/TLS, and JWT tokens are short-lived with refresh rotation. We do not store plain-text passwords or payment card data.</p>
+      </section>
+      <section>
+        <h2>8. Children</h2>
+        <p>The app is not intended for users under 18 years of age. We do not knowingly collect personal information from minors.</p>
+      </section>
+      <section>
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Significant changes will be communicated via the app or email. Continued use after changes constitutes acceptance of the updated policy.</p>
+      </section>
+      <section>
+        <h2>10. Contact</h2>
+        <p>For privacy-related questions or requests, contact us at: sainipariwar.sainiuday@gmail.com</p>
+      </section>
+    </div>
+
+    <div id="lang-hi" class="hidden">
+      <section>
+        <h2>1. हम क्या जानकारी एकत्र करते हैं</h2>
+        <p>हम आपके द्वारा प्रदान की गई जानकारी एकत्र करते हैं: नाम, ईमेल, मोबाइल नंबर, प्रोफ़ाइल फोटो, और समुदाय संबंधी विवरण जैसे गोत्र, गाँव, व्यवसाय, और स्थान। हम पुश नोटिफिकेशन के लिए डिवाइस पहचानकर्ता (FCM टोकन), ऐप उपयोग डेटा, और आपके द्वारा पोस्ट की गई सामग्री भी एकत्र करते हैं।</p>
+      </section>
+      <section>
+        <h2>2. हम आपकी जानकारी का उपयोग कैसे करते हैं</h2>
+        <p>आपकी जानकारी का उपयोग खाता प्रमाणीकरण, सदस्य निर्देशिका में प्रोफ़ाइल दिखाने, समुदाय सुविधाएँ (फ़ीड, बाज़ार, सेवाएँ, वैवाहिक) सक्षम करने, OTP/ऑर्डर अपडेट नोटिफिकेशन भेजने, और सामग्री मॉडरेशन के लिए किया जाता है।</p>
+      </section>
+      <section>
+        <h2>3. नोटिफिकेशन</h2>
+        <p>हम OTP, ऑर्डर/बुकिंग अपडेट, सामुदायिक घोषणाओं और संदेशों के लिए पुश नोटिफिकेशन भेजते हैं। आप अपनी डिवाइस सेटिंग से किसी भी समय नोटिफिकेशन अक्षम कर सकते हैं।</p>
+      </section>
+      <section>
+        <h2>4. डेटा साझाकरण</h2>
+        <p>हम आपका व्यक्तिगत डेटा नहीं बेचते। आपकी प्रोफ़ाइल जानकारी समुदाय के अन्य पंजीकृत सदस्यों को दिखाई देती है। हम डेटा केवल ऐप संचालन के लिए आवश्यक सेवा प्रदाताओं के साथ साझा करते हैं।</p>
+      </section>
+      <section>
+        <h2>5. डेटा प्रतिधारण</h2>
+        <p>जब तक आपका खाता सक्रिय है, आपका डेटा बनाए रखा जाता है। हटाए गए खातों का व्यक्तिगत डेटा 30 दिनों के भीतर हटा दिया जाता है।</p>
+      </section>
+      <section>
+        <h2>6. आपके अधिकार</h2>
+        <p>आप ऐप के माध्यम से कभी भी अपनी प्रोफ़ाइल देख और अपडेट कर सकते हैं। खाता हटाने के लिए हमसे संपर्क करें।</p>
+      </section>
+      <section>
+        <h2>7. सुरक्षा</h2>
+        <p>हम उद्योग-मानक सुरक्षा प्रथाओं का उपयोग करते हैं: पासवर्ड bcrypt हैश के रूप में संग्रहीत हैं, API संचार HTTPS/TLS का उपयोग करती है, और JWT टोकन अल्पकालिक हैं।</p>
+      </section>
+      <section>
+        <h2>8. बच्चे</h2>
+        <p>यह ऐप 18 वर्ष से कम आयु के उपयोगकर्ताओं के लिए नहीं है।</p>
+      </section>
+      <section>
+        <h2>9. नीति में परिवर्तन</h2>
+        <p>हम समय-समय पर इस गोपनीयता नीति को अपडेट कर सकते हैं। महत्वपूर्ण परिवर्तनों की सूचना ऐप या ईमेल के माध्यम से दी जाएगी।</p>
+      </section>
+      <section>
+        <h2>10. संपर्क</h2>
+        <p>गोपनीयता संबंधी प्रश्नों के लिए हमसे संपर्क करें: sainipariwar.sainiuday@gmail.com</p>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      if (lang === 'en') {
+        document.getElementById('lang-en').classList.remove('hidden');
+        document.getElementById('lang-hi').classList.add('hidden');
+        document.querySelector('h1').innerText = 'Privacy Policy';
+      } else {
+        document.getElementById('lang-en').classList.add('hidden');
+        document.getElementById('lang-hi').classList.remove('hidden');
+        document.querySelector('h1').innerText = 'गोपनीयता नीति';
+      }
+    }
+  </script>
+</body>
+</html>
