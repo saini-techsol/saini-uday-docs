@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Safety Standards — Saini Uday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --neon-purple: #b44fff;
+      --neon-pink: #ff2d78;
+      --dark: #0a0a0f;
+      --card-bg: rgba(255,255,255,0.03);
+      --border: rgba(255,255,255,0.08);
+      --text: #e0e0e0;
+      --text-muted: rgba(255,255,255,0.6);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--neon-purple), var(--neon-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    .date {
+      color: var(--neon-purple);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: white;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      color: var(--text-muted);
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .contact-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    a {
+      color: var(--neon-purple);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Child Safety Standards</h1>
+      <div class="date">Last Updated: July 03, 2026</div>
+    </header>
+
+    <section>
+      <p>Saini Uday is dedicated to providing a safe, secure, and respectful community app. We enforce a zero-tolerance policy against any form of child sexual abuse material (CSAM), child sexual abuse and exploitation (CSAE), and any conduct that threatens or exploits children.</p>
+    </section>
+
+    <section>
+      <h2>1. Zero Tolerance Policy</h2>
+      <p>We absolutely prohibit the uploading, sharing, transmission, or facilitation of any content related to:</p>
+      <ul>
+        <li>Child Sexual Abuse Material (CSAM) or Child Sexual Exploitation and Abuse (CSAE).</li>
+        <li>Grooming, solicitation, or harmful behavior directed at minors.</li>
+        <li>Underage profiles or matrimonial registrations involving individuals under the age of 18.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Proactive Prevention & Moderation</h2>
+      <p>To keep our platform safe for all users, we employ a combination of technological safeguards and manual review processes:</p>
+      <ul>
+        <li><strong>Age Gating:</strong> Registration is strictly limited to users aged 18 and older. Matrimonial registries undergo verification steps to ensure compliance with legal age requirements.</li>
+        <li><strong>Content Moderation:</strong> Images and text uploaded to the community feed, matrimonial registries, and marketplace listings are screened using automated detection filters and manual reviews to identify inappropriate or illegal content.</li>
+        <li><strong>Account Termination:</strong> Any user attempting to share, distribute, or solicit CSAE will face immediate and permanent ban from the application.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Reporting Content</h2>
+      <p>If you encounter any content or behavior on Saini Uday that you believe violates these standards, exploits minors, or constitutes child abuse, please report it immediately:</p>
+      <ul>
+        <li>Use the in-app <strong>Report User</strong> or <strong>Report Post</strong> flags.</li>
+        <li>Contact our dedicated safety response team directly at: <a href="mailto:saini.techsol@gmail.com">saini.techsol@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Reporting to Authorities</h2>
+      <p>Saini Uday complies with all applicable reporting laws. In accordance with federal guidelines, we report all instances of suspected child abuse and exploitation to the National Center for Missing & Exploited Children (NCMEC) and collaborate with law enforcement authorities globally to assist in prosecution.</p>
+    </section>
+
+    <section class="contact-card">
+      <h2>Safety Contact Information</h2>
+      <p>For inquiries, reporting violations, or general safety concerns:</p>
+      <p><strong>Safety Operations Team</strong><br>
+      Email: <a href="mailto:saini.techsol@gmail.com">saini.techsol@gmail.com</a><br>
+      <!-- Website Support: <a href="https://saini-techsol.shares.zrok.io/support">https://saini-techsol.shares.zrok.io/support</a></p> -->
+    </section>
+  </div>
+</body>
+</html>
